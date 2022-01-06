@@ -1,9 +1,11 @@
 package Intermediate.ClassesAndOBjects;
 
+import java.util.Random;
+
 public class DodgeChallenger {
 
     byte numberOfSeats = 5;
-    byte numberOfDoors = 4;
+    byte numberOfDoors = 3;
     byte numberOfVehicleOwners = 1;
     byte emissionSticker = 4;
 
@@ -26,6 +28,24 @@ public class DodgeChallenger {
     boolean isDamaged = true;
     char energyEfficiency = 'G';
 
+    String color;
+
+    DodgeChallenger(){
+
+    }
+    DodgeChallenger(String color,byte numberOfVehicleOwners, short power,short horsePower,short cubicCapacity,
+                    int price, int mileage,  boolean isDamaged){
+        this.color = color;
+        this.numberOfVehicleOwners = numberOfVehicleOwners;
+        this.power = power;
+        this.horsePower = horsePower;
+        this.cubicCapacity = cubicCapacity;
+        this.price = price;
+        this.mileage = mileage;
+        Random randomNumberGenerator = new Random();
+        this.registrationNumber = randomNumberGenerator.nextLong();
+        System.out.println("A " + color + " Dodge Challenger SRT created");
+    }
     public void  startTheEngine(){
         System.out.println("The Engine is started");
     }
@@ -33,6 +53,7 @@ public class DodgeChallenger {
          System.out.println("2018 Dodge Challenger SRT");
          System.out.println("price = $ " + price);
          System.out.println("Mileage : " + mileage);
+         System.out.println("Power: " + power);
          System.out.println("Is car is damaged : " + isDamaged);
          System.out.println("Registration Number : " + registrationNumber);
          System.out.println("Cubic Capacity : " + cubicCapacity);
