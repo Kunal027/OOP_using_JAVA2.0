@@ -52,7 +52,8 @@ public class AthleteApp {
         katinka.getBio();
         System.out.println("==============================");
         katinka.compete();
-        messi.setTeam("Barcelona");
+        katinka.freestyle(100);
+        katinka.freestyle(200);
         katinka.getBodyType();
 
     }

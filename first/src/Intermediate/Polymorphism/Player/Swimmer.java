@@ -25,6 +25,11 @@ public class Swimmer extends Athlete implements Swimming {
     }
 
     @Override
+    public void freestyle(int distance) {
+        System.out.println("Swimming : "  + distance + "M freestle very fast");
+    }
+
+    @Override
     public void compete() {
         super.compete();
         feestyle();
