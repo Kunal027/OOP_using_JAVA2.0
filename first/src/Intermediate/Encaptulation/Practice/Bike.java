@@ -5,7 +5,7 @@ import java.util.Random;
 public class Bike {
 
     String name;
-    String manufacturer;
+    private String manufacturer;
     short cubicCentimeter;
     long registrationNumber;
     short seatingCapacity;
@@ -33,5 +33,13 @@ public class Bike {
         System.out.println("BHP : " + bhp);
         System.out.println("Torque : " + torque);
         System.out.println("============================================================");
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public String getManufacturer(){
+        return manufacturer;
     }
 }
