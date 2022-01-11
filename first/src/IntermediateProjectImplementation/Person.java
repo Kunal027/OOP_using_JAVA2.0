@@ -21,7 +21,7 @@ public abstract class Person {
         System.out.println("Experts in : " + expertIn);
         System.out.println("The person has the following items : ");
         for (Item item : item) {
-            System.out.println(" - " + item);
+            System.out.println(" - " + item.getName());
         }
     }
 
